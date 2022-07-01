@@ -1,0 +1,401 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul  1 09:30:01 2022
+# Process ID: 24368
+# Current directory: F:/file/exp/cpu/single_cycle_cpu_download
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19400 F:\file\exp\cpu\single_cycle_cpu_download\single_cycle_cpu.xpr
+# Log file: F:/file/exp/cpu/single_cycle_cpu_download/vivado.log
+# Journal file: F:/file/exp/cpu/single_cycle_cpu_download\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 845.766 ; gain = 158.141
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 956.320 ; gain = 37.602
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-24368-HDL/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (1#1) [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-24368-HDL/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'IF' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF' (2#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/ID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID' (3#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/ID.v:23]
+WARNING: [Synth 8-350] instance 'ID_exa' of module 'ID' requires 12 connections, but only 11 given [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:71]
+INFO: [Synth 8-6157] synthesizing module 'exe' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/exe.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'exe' (4#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/exe.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wb' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/wb.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wb' (5#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/wb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:98]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:152]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'control' (6#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IROM' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IROM.v:23]
+INFO: [Synth 8-3876] $readmem data file 'F:/file/exp/cpu/single_cycle_cpu_download/inst_rom.data' is read successfully [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IROM.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'IROM' (7#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IROM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MEM_or_IO' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dram' [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-24368-HDL/realtime/dram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dram' (8#1) [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-24368-HDL/realtime/dram_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'a' does not match port width (14) of module 'dram' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:68]
+INFO: [Synth 8-6157] synthesizing module 'led' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'led' (9#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/led.v:23]
+WARNING: [Synth 8-350] instance 'led_dis' of module 'led' requires 20 connections, but only 19 given [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:83]
+INFO: [Synth 8-6157] synthesizing module 'switch' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/switch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'switch' (10#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/switch.v:23]
+WARNING: [Synth 8-350] instance 'SWITCH' of module 'switch' requires 2 connections, but only 1 given [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_or_IO' (11#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:23]
+WARNING: [Synth 8-350] instance 'mem_or_io' of module 'MEM_or_IO' requires 22 connections, but only 21 given [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'top' (12#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:1]
+WARNING: [Synth 8-3331] design led has unconnected port WE_led
+WARNING: [Synth 8-3331] design MEM_or_IO has unconnected port rst
+WARNING: [Synth 8-3331] design IROM has unconnected port a[15]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[14]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[13]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[12]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[11]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[10]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[9]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[8]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[6]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[5]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[4]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[3]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[2]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[1]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1003.289 ; gain = 84.570
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin led_dis:rst to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:83]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[23] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[22] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[21] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[20] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[19] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[18] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[17] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[16] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[15] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[14] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[13] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[12] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[11] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[10] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[9] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[8] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[7] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[6] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[5] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[4] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[3] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[2] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[1] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+WARNING: [Synth 8-3295] tying undriven pin SWITCH:s[0] to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1003.289 ; gain = 84.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1003.289 ; gain = 84.570
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.dcp' for cell 'CLK_WIZ'
+INFO: [Project 1-454] Reading design checkpoint 'F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/download_test/synthesized_ip/dram/dram.dcp' for cell 'mem_or_io/dmem'
+INFO: [Netlist 29-17] Analyzing 2433 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'CLK_WIZ/inst'
+Finished Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'CLK_WIZ/inst'
+Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'CLK_WIZ/inst'
+Finished Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'CLK_WIZ/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1354.426 ; gain = 0.066
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/constraint.xdc]
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc:1]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[0]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:1]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[1]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:2]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[2]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:3]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[3]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:4]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[4]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:5]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[5]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:6]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[6]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:7]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[7]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:8]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[8]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:9]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[9]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:10]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[10]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:11]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[11]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:12]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[12]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:13]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[13]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:14]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[14]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:15]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[15]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:16]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[16]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:17]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[17]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:18]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[18]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:19]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[19]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:20]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[20]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:21]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[21]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:22]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[22]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:23]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[23]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:24]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[0]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:27]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[1]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:28]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[2]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:29]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[3]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:30]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[4]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:31]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[5]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:32]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[6]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:33]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[7]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:34]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[8]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:35]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[9]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:36]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[10]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:37]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[11]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:38]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[12]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:39]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[13]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:40]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[14]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:41]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[15]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:42]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[16]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:43]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[17]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:44]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[18]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:45]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[19]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:46]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[20]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:47]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[21]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:48]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[22]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:49]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[23]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:50]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1354.426 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1354.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2048 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1465.949 ; gain = 547.230
+43 Infos, 49 Warnings, 48 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1465.949 ; gain = 547.230
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Jul  1 09:36:56 2022] Launched synth_1...
+Run output will be captured here: F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.runs/synth_1/runme.log
+[Fri Jul  1 09:36:56 2022] Launched impl_1...
+Run output will be captured here: F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1479.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-24368-HDL/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (1#1) [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-24368-HDL/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'IF' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF' (2#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/ID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID' (3#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/ID.v:23]
+WARNING: [Synth 8-350] instance 'ID_exa' of module 'ID' requires 12 connections, but only 11 given [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:72]
+INFO: [Synth 8-6157] synthesizing module 'exe' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/exe.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'exe' (4#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/exe.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wb' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/wb.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wb' (5#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/wb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:98]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:152]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'control' (6#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IROM' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IROM.v:23]
+INFO: [Synth 8-3876] $readmem data file 'F:/file/exp/cpu/single_cycle_cpu_download/inst_rom.data' is read successfully [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IROM.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'IROM' (7#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IROM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MEM_or_IO' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dram' [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-24368-HDL/realtime/dram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dram' (8#1) [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-24368-HDL/realtime/dram_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'a' does not match port width (14) of module 'dram' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:70]
+INFO: [Synth 8-6157] synthesizing module 'led' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'led' (9#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/led.v:23]
+WARNING: [Synth 8-350] instance 'led_dis' of module 'led' requires 20 connections, but only 19 given [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:85]
+INFO: [Synth 8-6157] synthesizing module 'switch' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/switch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'switch' (10#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/switch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_or_IO' (11#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:23]
+WARNING: [Synth 8-350] instance 'mem_or_io' of module 'MEM_or_IO' requires 23 connections, but only 22 given [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'top' (12#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:1]
+WARNING: [Synth 8-3331] design led has unconnected port WE_led
+WARNING: [Synth 8-3331] design MEM_or_IO has unconnected port rst
+WARNING: [Synth 8-3331] design IROM has unconnected port a[15]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[14]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[13]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[12]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[11]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[10]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[9]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[8]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[6]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[5]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[4]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[3]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[2]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[1]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1479.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin led_dis:rst to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:85]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1479.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1479.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.dcp' for cell 'CLK_WIZ'
+INFO: [Project 1-454] Reading design checkpoint 'F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/download_test/synthesized_ip/dram/dram.dcp' for cell 'mem_or_io/dmem'
+INFO: [Netlist 29-17] Analyzing 2433 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'CLK_WIZ/inst'
+Finished Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'CLK_WIZ/inst'
+Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'CLK_WIZ/inst'
+Finished Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'CLK_WIZ/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1511.367 ; gain = 0.000
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/constraint.xdc]
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc:1]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[0]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:1]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[1]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:2]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[2]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:3]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[3]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:4]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[4]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:5]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[5]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:6]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[6]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:7]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[7]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:8]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[8]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:9]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[9]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:10]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[10]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:11]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[11]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:12]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[12]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:13]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[13]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:14]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[14]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:15]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[15]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:16]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[16]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:17]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[17]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:18]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[18]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:19]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[19]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:20]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[20]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:21]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[21]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:22]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[22]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:23]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[23]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:24]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[0]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:27]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[1]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:28]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[2]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:29]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[3]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:30]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[4]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:31]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[5]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:32]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[6]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:33]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[7]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:34]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[8]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:35]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[9]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:36]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[10]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:37]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[11]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:38]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[12]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:39]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[13]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:40]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[14]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:41]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[15]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:42]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[16]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:43]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[17]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:44]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[18]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:45]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[19]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:46]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[20]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:47]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[21]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:48]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[22]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:49]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[23]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:50]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1511.367 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1511.367 ; gain = 31.891
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Jul  1 09:58:01 2022] Launched synth_1...
+Run output will be captured here: F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.runs/synth_1/runme.log
+[Fri Jul  1 09:58:01 2022] Launched impl_1...
+Run output will be captured here: F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Jul  1 10:04:35 2022] Launched synth_1...
+Run output will be captured here: F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.runs/synth_1/runme.log
+[Fri Jul  1 10:04:35 2022] Launched impl_1...
+Run output will be captured here: F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  1 10:09:55 2022...

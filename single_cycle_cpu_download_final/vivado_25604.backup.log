@@ -1,0 +1,173 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul  1 13:29:31 2022
+# Process ID: 25604
+# Current directory: F:/file/exp/cpu/single_cycle_cpu_download
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28524 F:\file\exp\cpu\single_cycle_cpu_download\single_cycle_cpu.xpr
+# Log file: F:/file/exp/cpu/single_cycle_cpu_download/vivado.log
+# Journal file: F:/file/exp/cpu/single_cycle_cpu_download\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 817.082 ; gain = 128.668
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1" may be locked by another hw_server.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0002
+set_property PROGRAM.FILE {F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1844.551 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1917.738 ; gain = 70.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-25604-HDL/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (1#1) [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-25604-HDL/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'IF' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF' (2#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/ID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID' (3#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/ID.v:23]
+WARNING: [Synth 8-350] instance 'ID_exa' of module 'ID' requires 12 connections, but only 11 given [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:73]
+INFO: [Synth 8-6157] synthesizing module 'exe' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/exe.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'exe' (4#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/exe.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wb' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/wb.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wb' (5#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/wb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:98]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:152]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'control' (6#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IROM' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IROM.v:23]
+INFO: [Synth 8-3876] $readmem data file 'F:/file/exp/cpu/single_cycle_cpu_download/inst_rom.data' is read successfully [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IROM.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'IROM' (7#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/IROM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MEM_or_IO' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dram' [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-25604-HDL/realtime/dram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dram' (8#1) [F:/file/exp/cpu/single_cycle_cpu_download/.Xil/Vivado-25604-HDL/realtime/dram_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'a' does not match port width (14) of module 'dram' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:69]
+INFO: [Synth 8-6157] synthesizing module 'led' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'led' (9#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/led.v:23]
+WARNING: [Synth 8-350] instance 'led_dis' of module 'led' requires 20 connections, but only 19 given [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:84]
+INFO: [Synth 8-6157] synthesizing module 'switch' [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/switch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'switch' (10#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/switch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_or_IO' (11#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:23]
+WARNING: [Synth 8-350] instance 'mem_or_io' of module 'MEM_or_IO' requires 23 connections, but only 22 given [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'top' (12#1) [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/top.v:1]
+WARNING: [Synth 8-3331] design led has unconnected port WE_led
+WARNING: [Synth 8-3331] design MEM_or_IO has unconnected port rst
+WARNING: [Synth 8-3331] design IROM has unconnected port a[15]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[14]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[13]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[12]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[11]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[10]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[9]
+WARNING: [Synth 8-3331] design IROM has unconnected port a[8]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[6]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[5]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[4]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[3]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[2]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[1]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1959.750 ; gain = 112.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin led_dis:rst to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:84]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1959.750 ; gain = 112.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1959.750 ; gain = 112.730
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.dcp' for cell 'CLK_WIZ'
+INFO: [Project 1-454] Reading design checkpoint 'F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/download_test/synthesized_ip/dram/dram.dcp' for cell 'mem_or_io/dmem'
+INFO: [Netlist 29-17] Analyzing 2433 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'CLK_WIZ/inst'
+Finished Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'CLK_WIZ/inst'
+Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'CLK_WIZ/inst'
+Finished Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'CLK_WIZ/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2363.359 ; gain = 0.066
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/constraint.xdc]
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc:1]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/clock.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2363.430 ; gain = 0.070
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2363.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2048 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2445.660 ; gain = 598.641
+43 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 2445.660 ; gain = 598.941
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  1 14:01:55 2022...

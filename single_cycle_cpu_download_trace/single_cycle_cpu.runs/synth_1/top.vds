@@ -1,0 +1,731 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul  1 14:40:25 2022
+# Process ID: 7828
+# Current directory: F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1/top.vds
+# Journal file: F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26232 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 467.910 ; gain = 100.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1/.Xil/Vivado-7828-HDL/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (1#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1/.Xil/Vivado-7828-HDL/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'IF' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/IF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF' (2#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/IF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/ID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID' (3#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/ID.v:23]
+WARNING: [Synth 8-350] instance 'ID_exa' of module 'ID' requires 12 connections, but only 11 given [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/top.v:72]
+INFO: [Synth 8-6157] synthesizing module 'exe' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/exe.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'exe' (4#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/exe.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wb' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/wb.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wb' (5#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/wb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:98]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:152]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'control' (6#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'prgrom' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1/.Xil/Vivado-7828-HDL/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'prgrom' (7#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1/.Xil/Vivado-7828-HDL/realtime/prgrom_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'a' does not match port width (14) of module 'prgrom' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/top.v:133]
+INFO: [Synth 8-6157] synthesizing module 'MEM_or_IO' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dram' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1/.Xil/Vivado-7828-HDL/realtime/dram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dram' (8#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1/.Xil/Vivado-7828-HDL/realtime/dram_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'a' does not match port width (14) of module 'dram' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:68]
+INFO: [Synth 8-6157] synthesizing module 'led' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'led' (9#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:23]
+WARNING: [Synth 8-350] instance 'led_dis' of module 'led' requires 20 connections, but only 19 given [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:83]
+INFO: [Synth 8-6157] synthesizing module 'switch' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/switch.v:23]
+WARNING: [Synth 8-3848] Net data_from_switch in module/entity switch does not have driver. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/switch.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'switch' (10#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/switch.v:23]
+WARNING: [Synth 8-350] instance 'SWITCH' of module 'switch' requires 2 connections, but only 1 given [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_or_IO' (11#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:23]
+WARNING: [Synth 8-350] instance 'mem_or_io' of module 'MEM_or_IO' requires 22 connections, but only 21 given [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/top.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'top' (12#1) [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/top.v:1]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[31]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[30]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[29]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[28]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[27]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[26]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[25]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[24]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[23]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[22]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[21]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[20]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[19]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[18]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[17]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[16]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[15]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[14]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[13]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[12]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[11]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[10]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[9]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[8]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[7]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[6]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[5]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[4]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[3]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[2]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[1]
+WARNING: [Synth 8-3331] design switch has unconnected port data_from_switch[0]
+WARNING: [Synth 8-3331] design switch has unconnected port s[23]
+WARNING: [Synth 8-3331] design switch has unconnected port s[22]
+WARNING: [Synth 8-3331] design switch has unconnected port s[21]
+WARNING: [Synth 8-3331] design switch has unconnected port s[20]
+WARNING: [Synth 8-3331] design switch has unconnected port s[19]
+WARNING: [Synth 8-3331] design switch has unconnected port s[18]
+WARNING: [Synth 8-3331] design switch has unconnected port s[17]
+WARNING: [Synth 8-3331] design switch has unconnected port s[16]
+WARNING: [Synth 8-3331] design switch has unconnected port s[15]
+WARNING: [Synth 8-3331] design switch has unconnected port s[14]
+WARNING: [Synth 8-3331] design switch has unconnected port s[13]
+WARNING: [Synth 8-3331] design switch has unconnected port s[12]
+WARNING: [Synth 8-3331] design switch has unconnected port s[11]
+WARNING: [Synth 8-3331] design switch has unconnected port s[10]
+WARNING: [Synth 8-3331] design switch has unconnected port s[9]
+WARNING: [Synth 8-3331] design switch has unconnected port s[8]
+WARNING: [Synth 8-3331] design switch has unconnected port s[7]
+WARNING: [Synth 8-3331] design switch has unconnected port s[6]
+WARNING: [Synth 8-3331] design switch has unconnected port s[5]
+WARNING: [Synth 8-3331] design switch has unconnected port s[4]
+WARNING: [Synth 8-3331] design switch has unconnected port s[3]
+WARNING: [Synth 8-3331] design switch has unconnected port s[2]
+WARNING: [Synth 8-3331] design switch has unconnected port s[1]
+WARNING: [Synth 8-3331] design switch has unconnected port s[0]
+WARNING: [Synth 8-3331] design led has unconnected port WE_led
+WARNING: [Synth 8-3331] design MEM_or_IO has unconnected port rst
+WARNING: [Synth 8-3331] design ID has unconnected port inst[6]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[5]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[4]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[3]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[2]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[1]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 523.727 ; gain = 156.039
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin led_dis:rst to constant 0 [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/MEM_or_IO.v:83]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 523.727 ; gain = 156.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 523.727 ; gain = 156.039
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/download_test/synthesized_ip/dram/dram/dram_in_context.xdc] for cell 'mem_or_io/dmem'
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/download_test/synthesized_ip/dram/dram/dram_in_context.xdc] for cell 'mem_or_io/dmem'
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/download_test/synthesized_ip/prgrom/prgrom/prgrom_in_context.xdc] for cell 'imem'
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/download_test/synthesized_ip/prgrom/prgrom/prgrom_in_context.xdc] for cell 'imem'
+Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'CLK_WIZ'
+Finished Parsing XDC File [f:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'CLK_WIZ'
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/clock.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/clock.xdc:1]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/clock.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/clock.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[0]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:1]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[1]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:2]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[2]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:3]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[3]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:4]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[4]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:5]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[5]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:6]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[6]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:7]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[7]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:8]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[8]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:9]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[9]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:10]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[10]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:11]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[11]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:12]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[12]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:13]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[13]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:14]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[14]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:15]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[15]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:16]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[16]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:17]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[17]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:18]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[18]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:19]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[19]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:20]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[20]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:21]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[21]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:22]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[22]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:23]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[23]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:24]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[0]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:27]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[1]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:28]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[2]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:29]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[3]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:30]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[4]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:31]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[5]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:32]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[6]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:33]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[7]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:34]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[8]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:35]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[9]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:36]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[10]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:37]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[11]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:38]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[12]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:39]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[13]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:40]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[14]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:41]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[15]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:42]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[16]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:43]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[17]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:44]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[18]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:45]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[19]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:46]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[20]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:47]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[21]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:48]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[22]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:49]
+CRITICAL WARNING: [Designutils 20-1307] Command 's[23]' is not supported in the xdc constraint file. [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc:50]
+Finished Parsing XDC File [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/constrs_1/new/switch_constraint.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 882.281 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 882.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 882.281 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 882.281 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 882.281 ; gain = 514.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 882.281 ; gain = 514.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_i. (constraint file  f:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_i. (constraint file  f:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for CLK_WIZ. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 882.281 ; gain = 514.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/ID.v:77]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/ID.v:63]
+INFO: [Synth 8-5587] ROM size for "wD_sel_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "wb_sel_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "pc_sel_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "op_A_sel_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "op_B_sel_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "ALU_op_reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ALU_op_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "imm_sel_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "WE_led0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'imm_sel_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'wD_sel_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'wb_sel_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_sel_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_WE_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'WE_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_op_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'B_sel_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:153]
+WARNING: [Synth 8-327] inferring latch for variable 'op_A_sel_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'op_B_sel_reg_reg' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/control.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[0]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[1]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[2]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[3]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[4]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[5]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[6]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[7]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[8]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[9]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[10]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[11]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[12]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[13]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[14]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'led_display_reg[15]' [F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.srcs/sources_1/new/led.v:81]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 882.281 ; gain = 514.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	   4 Input     32 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 13    
+	   7 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module IF 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ID 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+Module exe 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module wb 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      3 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 13    
+	   7 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module led 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module MEM_or_IO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "led_dis/cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "WE_led0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5587] ROM size for "CONTROL_exa/imm_sel_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "CONTROL_exa/wD_sel_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "CONTROL_exa/wb_sel_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "CONTROL_exa/pc_sel_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "CONTROL_exa/op_A_sel_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "CONTROL_exa/op_B_sel_reg" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-3331] design MEM_or_IO has unconnected port rst
+WARNING: [Synth 8-3331] design ID has unconnected port inst[6]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[5]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[4]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[3]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[2]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[1]
+WARNING: [Synth 8-3331] design ID has unconnected port inst[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\CONTROL_exa/op_A_sel_reg_reg )
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[15][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[14][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[13][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[12][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[11][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[10][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[9][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[8][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[7][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[6][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[5][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[4][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[3][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[2][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[1][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[0][0]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[15][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[14][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[13][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[12][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[11][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[10][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[9][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[8][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[7][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[6][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[5][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[4][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[3][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[2][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[1][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[0][1]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[15][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[14][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[13][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[12][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[11][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[10][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[9][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[8][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[7][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[6][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[5][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[4][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[3][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[2][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[1][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[0][2]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[15][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[14][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[13][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[12][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[11][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[10][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[9][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[8][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[7][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[6][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[5][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[4][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[3][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[2][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[1][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[0][3]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[15][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[14][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[13][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[12][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[11][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[10][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[9][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[8][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[7][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[6][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[5][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[4][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[3][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[2][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[1][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[0][4]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[15][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[14][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[13][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[12][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[11][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[10][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[9][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[8][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[7][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[6][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[5][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[4][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[3][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[2][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[1][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[0][5]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[15][6]' (LD) to 'mem_or_io/led_dis/led_display_reg[14][6]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[14][6]' (LD) to 'mem_or_io/led_dis/led_display_reg[13][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[13][6]' (LD) to 'mem_or_io/led_dis/led_display_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'mem_or_io/led_dis/led_display_reg[12][6]' (LD) to 'mem_or_io/led_dis/led_display_reg[13][7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\mem_or_io/led_dis/led_display_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem_or_io/led_dis/led_display_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\mem_or_io/led_dis/led_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (CONTROL_exa/op_A_sel_reg_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_or_io/led_dis/led_display_reg[1][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_or_io/led_dis/led_display_reg[0][7]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 882.281 ; gain = 514.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+----------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object           | Inference | Size (Depth x Width) | Primitives    | 
++------------+----------------------+-----------+----------------------+---------------+
+|top         | ID_exa/reg_array_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+----------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK_WIZ/clk_out1' to pin 'CLK_WIZ/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 882.281 ; gain = 514.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1078.082 ; gain = 710.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+----------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object           | Inference | Size (Depth x Width) | Primitives    | 
++------------+----------------------+-----------+----------------------+---------------+
+|top         | ID_exa/reg_array_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+----------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1078.082 ; gain = 710.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1078.082 ; gain = 710.395
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1078.082 ; gain = 710.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1078.082 ; gain = 710.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1078.082 ; gain = 710.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1078.082 ; gain = 710.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1078.082 ; gain = 710.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz       |         1|
+|2     |prgrom        |         1|
+|3     |dram          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |dram    |     1|
+|3     |prgrom  |     1|
+|4     |CARRY4  |    63|
+|5     |LUT1    |    12|
+|6     |LUT2    |   110|
+|7     |LUT3    |    30|
+|8     |LUT4    |   138|
+|9     |LUT5    |   120|
+|10    |LUT6    |   686|
+|11    |RAM32M  |    12|
+|12    |FDRE    |    88|
+|13    |FDSE    |     8|
+|14    |LD      |    16|
+|15    |IBUF    |     1|
+|16    |OBUF    |    16|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------+----------+------+
+|      |Instance      |Module    |Cells |
++------+--------------+----------+------+
+|1     |top           |          |  1366|
+|2     |  CONTROL_exa |control   |   692|
+|3     |  EXE_exa     |exe       |    23|
+|4     |  ID_exa      |ID        |   295|
+|5     |  IF_exa      |IF        |   113|
+|6     |  mem_or_io   |MEM_or_IO |   192|
+|7     |    led_dis   |led       |   126|
++------+--------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1078.082 ; gain = 710.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1078.082 ; gain = 351.840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1078.082 ; gain = 710.395
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1078.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  LD => LDCE: 16 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+170 Infos, 113 Warnings, 48 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1078.082 ; gain = 721.867
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1078.082 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  1 14:41:10 2022...

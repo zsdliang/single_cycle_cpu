@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul  1 14:37:52 2022
+# Process ID: 27132
+# Current directory: F:/file/exp/cpu/single_cycle_cpu_download_example
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13424 F:\file\exp\cpu\single_cycle_cpu_download_example\single_cycle_cpu.xpr
+# Log file: F:/file/exp/cpu/single_cycle_cpu_download_example/vivado.log
+# Journal file: F:/file/exp/cpu/single_cycle_cpu_download_example\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.xpr
+INFO: [Project 1-313] Project file moved from 'F:/file/exp/cpu/single_cycle_cpu' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 835.238 ; gain = 194.645
+update_compile_order -fileset sources_1
+reset_run synth_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0002
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Jul  1 14:40:23 2022] Launched synth_1...
+Run output will be captured here: F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/synth_1/runme.log
+[Fri Jul  1 14:40:23 2022] Launched impl_1...
+Run output will be captured here: F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/file/exp/cpu/single_cycle_cpu_download_example/single_cycle_cpu.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1856.594 ; gain = 1.266
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  1 14:50:32 2022...

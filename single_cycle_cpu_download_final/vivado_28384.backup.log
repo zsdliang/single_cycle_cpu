@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul  1 14:39:29 2022
+# Process ID: 28384
+# Current directory: F:/file/exp/cpu/single_cycle_cpu_download_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27568 F:\file\exp\cpu\single_cycle_cpu_download_3\single_cycle_cpu.xpr
+# Log file: F:/file/exp/cpu/single_cycle_cpu_download_3/vivado.log
+# Journal file: F:/file/exp/cpu/single_cycle_cpu_download_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/file/exp/cpu/single_cycle_cpu_download_3/single_cycle_cpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 846.234 ; gain = 191.914
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0002
+set_property PROGRAM.FILE {F:/file/exp/cpu/single_cycle_cpu_download_3/single_cycle_cpu.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  1 14:40:44 2022...
